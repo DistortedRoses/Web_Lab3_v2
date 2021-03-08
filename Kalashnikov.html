@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Список кинофильмов</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script>
+
+			function Message()
+			{
+				alert('Билет на фильм "Калашников (2020)" успешно заказан!')
+			}
+
+		</script>
+
+		<hr color = red>
+		<h1>ИНФОРМАЦИЯ О ФИЛЬМЕ</h1>
+		<hr color = red>
+	</head>
+	
+	<header>
+		<a href = https://vk.com/ivebeendoingwell target = _blank title = "Страница разработчика"><img src = logo.png wight = 100px height = 100px class = logo></a>
+		<a href = main.html title = "Главная страница сайта">Главная</a><a href = Film_List.html title = "Список актуальных фильмов" class = hTab>Список фильмов</a><a href = about_us.html title = "Вся доступная информация о нашей компании" class = hTab>О Нас</a>
+	</header>
+	<center>
+		<a href = Kalashnikov.png target = _blank><img src = Kalashnikov.png class = filmInfo /></a>
+	</center>
+	<h3>Краткое описание</h3>
+	<p class = shortDiscrFL>Юрий Борисов в байопике про изобретателя легендарного автомата AК-47.</p><br>
+
+	<h3>Подробное описание</h3>
+	<p class = detalDiscrFL>Калашников. Все знают эту фамилию, но не все знают, какой долгий и тернистый путь прошёл парень-самоучка, чтобы в 28 лет создать легендарный автомат АК-47, который по сей день является символом оружейной мысли нашего времени.</p>
+
+    <h3>О фильме</h3>
+    <center>
+		<table bordercolor = red border = 3 width = 800 height = 1000px cellpadding = 10px>
+			<div class = "fontTable">
+				<tr style = "font-weight: 700">
+					<td></td>
+					<td>Название арактеристики</td>
+					<td>Описание характеристики</td>
+				</tr>
+		      	<tr>
+					<td>1</td>
+					<td>Год производства</td>
+					<td>2020</td>
+				</tr>
+
+				<tr>
+					<td>2</td>
+					<td>Страна</td>
+					<td>Россия</td>
+				</tr>
+
+				<tr>
+					<td rowspan = 2>3</td>
+					<td rowspan = 2>Жанр</td>
+					<td>Биография</td>
+				</tr>
+				<tr>
+					<td>История</td>
+				</tr>
+
+				<tr>
+					<td>4</td>
+					<td>Режиссер</td>
+					<td>Константин Буслов</td>
+				</tr>
+
+				<tr>
+					<td rowspan = 3>5</td>
+					<td rowspan = 3>Сценарий</td>
+					<td>Анатолий Усов</td>
+				</tr>
+				<tr>
+					<td>Сергей Бодров</td>
+				</tr>
+				<tr>
+					<td>Алексей Бородачёв</td>
+				</tr>
+
+				<tr>
+					<td rowspan = 2>6</td>
+					<td rowspan = 2>Продюсер</td>
+					<td>Константин Буслов</td>
+				</tr>
+				<tr>
+					<td>Сергей Бодров</td>
+				</tr>
+				
+				<tr>
+					<td>7</td>
+					<td>Композитор</td>
+					<td>Сергей Штерн</td>
+		      	</tr>
+			</div>
+		</table>
+	</center>
+	
+	<p style = "margin-left: 100px" align = center>
+		<input type = button name = button1 onclick = "Message()" value = "Заказать билет" style = " font-size : 40px; width: 500px; height: 70px;"/>
+	</p>
+
+	<footer>
+		<hr color = black>&copy Валентин Прокофьев 2021<br>Все права защищены.
+	</footer>
+</html>

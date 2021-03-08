@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>О нас</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script>
+
+			function SendMail ()
+			{
+	            var val = document.getElementById("name").value;
+	            var mail = document.getElementById("email").value;
+	            alert(val + " (" + mail +"), Ваше сообщение успешно отправлено!");
+        	}
+
+			function myMap() {
+		        var mapOptions = {
+			        center: new google.maps.LatLng(54.166955, 37.586500),
+			        zoom: 14,
+			        mapTypeId: google.maps.MapTypeId.HYBRID
+		    	}
+		        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	        }
+
+		</script>
+
+		<hr color = red>
+		<h1>НАША КОМПАНИЯ</h1>
+		<hr color = red>
+	</head>
+
+	<header>
+		<a href = https://vk.com/ivebeendoingwell target = "_blank" title = "Страница разработчика"><img src = logo.png wight = 100px height = 100px class = logo></a>
+		<a href = main.html title = "Главная страница сайта">Главная</a><a href = Film_List.html title = "Список актуальных фильмов" class = hTab>Список фильмов</a><a href = about_us.html title = "Вся доступная информация о нашей компании" class = hTab>О Нас</a>
+	</header>
+
+	<div class = description><br>
+		Наш кинотеатр предоставляет услуги видеопроката фильмов в г. Тула.<br>
+		На нашем сайте вы сможете ознакомиться со списком доступных кинофильмов в прокате, просмотреть описание текущего кинофильма и забронировать место в кинозале на него.<br>
+	</div>
+
+	<hr color = red>
+
+	<h1>Свяжитесь с нами</h1>
+
+	<form action = registration.php>
+	    <ul class = testUl>
+	        <li><label for = name2>Имя</label>
+	        <input type = name id = name></li>
+
+	    	<li><label for = email>E-mail</label>
+	    	<input type = email id = email><br></li>
+
+	    	<li><label for = topic>Тема сообщения</label>
+	    	<input type = topic id = topic><br></li>
+
+	    	<li><label for = text>Текст сообщения</label></li>
+	    	<textarea name = text cols = 100 rows = 10></textarea>
+	    </ul>
+    </form>
+
+	<input type = button name = button2 onclick = "SendMail()" value = Отправить style = "font-size: 14px; width: 150px; height: 30px;"/>
+
+	<hr color = red>
+	<h1>Контактные данные</h1>
+	<div class = contacts>
+		Тел. <a href = tel:+79308953718>+7(930)8953718</a><br>
+		E-mail:<a href = mailto:valtes22@mail.ru>valtes22@mail.ru</a><br>
+		Адрес: Россия, г. Тула, Проспект Ленина, 92<br><br>
+	</div>
+	<center>
+		<div id = map style = "width: 50%; height: 500px;"></div>
+		<script src = https://maps.googleapis.com/maps/api/js?callback=myMap></script>
+		<br>
+	</center>
+
+	<hr color = red>
+
+	<h1>Гл. руководитель</h1>
+	<center>
+		<a href = https://vk.com/ivebeendoingwell target = _blank title = "Страница разработчика"><img src = Photo.png class = genDir /><br><br>
+			<b>Прокофьев В.О.</b>
+		</a>
+	</center>
+	<footer>
+		<hr color = black>&copy Валентин Прокофьев 2021<br>Все права защищены.</
+	</footer>
+</html>
